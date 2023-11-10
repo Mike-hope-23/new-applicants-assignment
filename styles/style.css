@@ -1,17 +1,96 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
-
-*,
-*::before,
-*::after {
-    margin: 0;
+*{
     padding: 0;
-    box-sizing: border-box;
-}
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+ }
+ body{
+    background-color: #edfff2;
+    display: grid;
+    height: 100vh;
+    place-items: center;
+ }
+ .container{
+    width: 450px;
+    height: 530px;
+    background-color: #000a12;
+    position: absolute;
+    border: 1px solid #717377;
+    border-radius: 6px; 
+ }
 
-body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    color: #fff;
-}
+ /* Display styling */
 
-/* Add your css  */
+ .container input[type='text'] {
+    width: 88%;
+    position: relative;
+    height: 80px;
+    top: 10px;
+    text-align: right;
+    padding: 3px 6px;
+    outline: none;
+    font-size: 40px;
+    border: 5px solid black;
+    display: flex;
+    margin: auto;
+    border-radius: 6px;
+    color: black;
+ }
+
+/* Button styling */
+
+ .btn input[type='button']{
+    width: 90px;
+    padding: 2px;
+    
+    
+    height: 60px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.5s;
+    background-color: #495250;
+    border-radius: 6px;
+    color: white;
+ }
+ .btn input[type='button']:hover{
+    background-color: black;
+    color: white;
+ }
+/* flex positioning */
+ .btn {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 23px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 1px;
+ }
+
+ /* Media queries */
+
+ @media (max-width: 512px) {
+    .container{
+        width: 410px;
+    }
+ }
+
+ @media (max-width: 442px) {
+    .container{
+        width: 370px;
+    }
+    .btn {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+ }
+
+ @media (max-width: 386px) {
+    .container{
+        width: 300px;
+    }
+ }
+
+ /* 
+ i changed my positioning to flex when i realized it was more efficient
+ position: relative;
+    left: 13px;
+    top: 20px; */
