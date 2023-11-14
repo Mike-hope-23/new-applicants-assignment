@@ -1,26 +1,26 @@
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'poppins', sans-serif;
- }
- body{
+}
+body {
     background-color: #edfff2;
     display: grid;
     height: 100vh;
     place-items: center;
- }
- .container{
+}
+.container {
     width: 450px;
     height: 530px;
     background-color: #000a12;
     position: absolute;
     border: 1px solid #717377;
-    border-radius: 6px; 
- }
+    border-radius: 6px;
+}
 
- /* Display styling */
+/* Display styling */
 
- .container input[type='text'] {
+.container input[type='text'] {
     width: 88%;
     position: relative;
     height: 80px;
@@ -35,45 +35,45 @@
     border-radius: 6px;
     color: black;
     caret-color: transparent;
- }
+}
 
 /* Button styling */
 
- .btn input[type='button']{
+.btn input[type='button'] {
     margin: 0;
     width: 75px;
     height: 60px;
     font-size: 25px;
-    background-color: #1D1E22;
+    background-color: #1d1e22;
     color: white;
     border: none;
     transition: 0.3s;
     border-radius: 6px;
- }
- .btn input[type='button']:hover{
+}
+.btn input[type='button']:hover {
     background-color: black;
     color: white;
- }
+}
 /* flex positioning */
- .btn {
+.btn {
     display: flex;
     justify-content: space-around;
     margin-top: 23px;
     margin-left: 10px;
     margin-right: 10px;
     border: 1px;
- }
+}
 
- /* Media queries */
+/* Media queries */
 
- @media (max-width: 512px) {
-    .container{
+@media (max-width: 512px) {
+    .container {
         width: 410px;
     }
- }
+}
 
- @media (max-width: 442px) {
-    .container{
+@media (max-width: 442px) {
+    .container {
         width: 370px;
     }
     .btn input[type='button'] {
@@ -82,13 +82,13 @@
     .container input[type='text'] {
         width: 86.2%;
     }
- }
+}
 
- @media (max-width: 386px) {
-    .container{
+@media (max-width: 386px) {
+    .container {
         width: 300px;
     }
-    
+
     .btn input[type='button'] {
         width: 58px;
         height: 50px;
@@ -97,19 +97,17 @@
         width: 85.2%;
     }
     .container {
-    height: 480px;
+        height: 480px;
     }
- }
+}
 
- /* 
+/* 
  i changed my positioning to flex when i realized it was more efficient
  position: relative;
     left: 13px;
     top: 20px; */
 
-
-
-    /* 
+/* 
     margin: 0;
     width: 75px;
     height: 60px;
